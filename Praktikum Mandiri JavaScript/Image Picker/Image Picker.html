@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+ <html lang="id">
+ <head>
+     <title>Image Picker</title>
+     <script>
+         function cetak_gambar() {
+    const hewan= document.getElementById("hewan");
+    const gambar= document.getElementById("gambar");
+
+    if (hewan.value == "kelinci"){
+        gambar.src = "kelinci.png"
+        alert("gambar kelinci");
+    }
+
+    if (hewan.value == "Kambing"){
+        gambar.src = "Kambing.png"
+        alert("gambar Kambing");
+    }
+
+   if (hewan.value == "Rusa"){
+       gambar.src = "Rusa.png"
+       alert("gambar Rusa");
+   } 
+
+   if (hewan.value == "Gorila"){
+       gambar.src = "gorila.png"
+       alert("gambar Gorila");
+   }
+
+    if (hewan.value == "Kucing"){
+       gambar.src = "Kucing.png"
+       alert("gambar Kucing");
+   }
+   
+   if (hewan.value == "Elang"){
+       gambar.src = "Elang.png"
+       alert("gambar Elang");
+   }
+
+   if (hewan.value == "Sapi"){
+       gambar.src = "Sapi.png"
+       alert("gambar Sapi");
+   }
+}
+     </script>
+ </head>
+ <body>
+     <div>
+         <h3>Pilihlah Gambar yang Disukai</h3>
+         <br>
+         <br>
+         <table style="border: solid 1px;">
+         <tr>
+             <td>
+                 <label form="hewan">Pilihlah Salah Satu Gambar</label><br>
+                 <select id="hewan" onchange="cetak_gambar()">
+                    <option value="kelinci">Kelinci</option>
+                    <option value="Kambing">Kambing</option>
+                    <option value="Rusa">Rusa</option>
+                    <option value="Gorila">Gorila</option>
+                    <option value="Kucing">Kucing</option>
+                    <option value="Elang">Elang</option>
+                    <option value="Sapi">Sapi</option>
+                </select>
+             </td>
+         </tr>
+         </table>
+     </div>
+     <br>
+     <br>
+        <div style="width: 10px; height: 100px; border-style: solid 1px;">
+            <img src="" id="gambar">
+        </div>
+ </body>
+ </html>

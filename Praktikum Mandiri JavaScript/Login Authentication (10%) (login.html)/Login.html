@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+<body>
+    <form action="file:///C:/Users/amelia/Documents/Semester%201/SELASA/Pemrograman%20Web%201/Tugas%20Pemrograman%20Web/JavaScript/Pratikum%20Mandiri%20JavaScript%20(5%20soal)/loginsukses.html" name="loginForm">
+        <label for="username">
+            Username :
+        </label>
+        <br>
+        <input type="text" id="username" required placeholder="Nama User">
+
+        <br>
+
+        <label for="password">
+            password :
+        </label>
+        <br>
+        <input type="password" id="password" required placeholder="kata sandi">
+
+        <br>
+
+        <button type="submit" onclick="masuk()">Login</button>
+    </form>
+    <script>
+        function masuk() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            if (username == "ahmad2017" && password == "intergrity") {
+                alert("LOGIN SUKSES");
+            } else {
+                alert("LOGIN GAGAL!");
+            }
+        }
+    </script>
+</body>
+</html>
